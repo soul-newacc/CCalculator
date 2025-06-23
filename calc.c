@@ -12,10 +12,10 @@ suma() {
     float num[3];
     for (i=1;i < 3;i++) {
         printf("Insert digit N°%i", i);
-        printf(" summing up mathematics  ");
-        scanf(" to add %f", &num[i]);
+        printf(" to add ");
+        scanf("%f", &num[i]);
     }
-    printf("\naThe result is %f", num[1]+num[2]);
+    printf("\nThe result is %f", num[1]+num[2]);
 }
 
 resta() {
@@ -24,7 +24,7 @@ resta() {
     for (i=1;i < 3;i++) {
         printf("Insert digit N°%i", i);
         printf(" to substract ");
-        scanf("%i", &num[i]);
+        scanf("%f", &num[i]);
     }
     printf("\nThe result is %f", num[1]-num[2]);
 }
@@ -56,13 +56,13 @@ division() {
     }
 }
 
-5
+
 main() {
     printf("CCalculator! (double c cuz its made on c)");
     while (1) {
         int sel = 0;
         printf("\n\nWhat operation would you like to do?\n");
-        printf("1: Addition \n2: Subtraction\n3 : Multiplication\n4: Division\n5: Salir\n\n> ");
+        printf("1: Addition \n2: Subtraction\n3: Multiplication\n4: Division\n5: Salir\n\n> ");
         scanf("%i", &sel);
         if (sel == 1) {
             suma();
